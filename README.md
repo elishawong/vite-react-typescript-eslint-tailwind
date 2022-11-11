@@ -14,5 +14,5 @@ Bundles with:
 ## Available Scripts
 
 - `yarn`
-- `yarn dev`
+- `yarn start`
 - `yarn build`
