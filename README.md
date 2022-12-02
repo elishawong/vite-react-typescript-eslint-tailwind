@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" >
 </div>
 <br />
+
 A template for React Typescript project created with `npm create vite@latest`.
 
 Bundles with:
