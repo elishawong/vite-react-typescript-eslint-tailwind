@@ -1,4 +1,5 @@
 # Getting Started
+
 <div style="display: flex; flex-direction: row; gap: 5px;">
   <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" >
@@ -8,20 +9,24 @@
 </div>
 <br />
 
-A template for React Typescript project created with `npm create vite@latest`.
+A template for React Typescript project created with `nVpm create vite@latest`.
 
 Bundles with:
+
 1. Tailwind
 2. Eslint Typescript
 
-## Demo
-[Demo](https://vite-react-typescript-eslint-tailwind.elishaworld.com/)
+| Deployment Status                                                                              | URL                                                                   |
+| ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| ![Vercel](https://vercelbadge.vercel.app/api/elishawong/vite-react-typescript-eslint-tailwind) | [Demo](https://vite-react-typescript-eslint-tailwind.elishaworld.com) |
 
 ## Prerequisites
+
 1. Node 19 (v19.2.0)
 2. React 18
 
 ## Available Scripts
+
 - `yarn install` - Install all node dependencies for a project
 - `yarn start` - Start the development server
 - `yarn build` - Bundles the app into static files for production
@@ -30,6 +35,7 @@ Bundles with:
 - `yarn lint-fix` - Search and fix error / warning found
 
 # License
+
 MIT License
 
 Copyright (c) 2022 Elisha Wong
