@@ -14,7 +14,8 @@ Bundles with:
 1. Tailwind
 2. Eslint Typescript
 
-[Demo](https://vite-react-typescript-eslint-tailwind.vercel.app/)
+## Demo
+[Demo](https://vite-react-typescript-eslint-tailwind.elishaworld.com/)
 
 ## Prerequisites
 1. Node 19 (v19.2.0)
