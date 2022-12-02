@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from "react"
 
-import { faBell, faUser } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { faBell, faUser } from "@fortawesome/free-regular-svg-icons"
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Disclosure, Menu, Transition } from "@headlessui/react"
 
 const navigation = [
   { name: "Dashboard", href: "/#", current: true },

@@ -11,7 +11,6 @@
 A template for React Typescript project created with `npm create vite@latest`.
 
 Bundles with:
-
 1. Tailwind
 2. Eslint Typescript
 
@@ -20,7 +19,6 @@ Bundles with:
 2. React 18
 
 ## Available Scripts
-
 - `yarn install` - Install all node dependencies for a project
 - `yarn start` - Start the development server
 - `yarn build` - Bundles the app into static files for production
