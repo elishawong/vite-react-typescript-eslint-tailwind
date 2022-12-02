@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./pages/Home";
-import NotFound from "./pages/Error/NotFound";
+import "./App.css"
+
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+
+import NotFound from "./pages/Error/NotFound"
+import Home from "./pages/Home"
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <Routes>
@@ -14,7 +13,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -9,10 +9,13 @@ Bundles with:
 
 ## Prerequisites
 
-- Node 19 (v19.0.1)
+- Node 19 (v19.2.0)
 
 ## Available Scripts
 
-- `yarn`
-- `yarn start`
-- `yarn build`
+- `yarn install` - Install all node dependencies for a project
+- `yarn start` - Start the development server
+- `yarn build` - Bundles the app into static files for production
+- `yarn format` - Format code style
+- `yarn lint` - Search for error / warning, but not fixing it
+- `yarn lint-fix` - Search and fix error / warning found

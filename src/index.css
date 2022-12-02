@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 #root {
-  --primary: #797EF6;
-  --primaryLight: #AAAFFF;
-  --secondary: #1E2F97;
-  --blue: #1AA7EC;
-  --lightBlue: #4ADEDE;
+  --primary: #797ef6;
+  --primaryLight: #aaafff;
+  --secondary: #1e2f97;
+  --blue: #1aa7ec;
+  --lightBlue: #4adede;
 }
 
 :root {
@@ -84,7 +84,7 @@ button:focus-visible {
   }
 }
 
-.navbar-a{
+.navbar-a {
   background-image: linear-gradient(var(--primaryLight), var(--primaryLight));
   background-size: 0% 0;
   background-repeat: no-repeat;

@@ -1,18 +1,19 @@
 import React, { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faBell, faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 const navigation = [
   { name: "Dashboard", href: "/#", current: true },
   { name: "Team", href: "/#", current: false },
   { name: "Projects", href: "/#", current: false },
   { name: "Calendar", href: "/#", current: false },
-];
+]
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(" ")
 }
 
 export default function Navbar() {
@@ -26,19 +27,13 @@ export default function Navbar() {
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <FontAwesomeIcon icon={faXmark} />
-                  ) : (
-                    <FontAwesomeIcon icon={faBars} />
-                  )}
+                  {open ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start h-full">
                 <div className="flex-shrink-0 flex items-center">
                   <a href="/">
-                    <div className="text-primary font-extrabold tracking-widest">
-                      LOGO
-                    </div>
+                    <div className="text-primary font-extrabold tracking-widest">LOGO</div>
                   </a>
                 </div>
 
@@ -53,7 +48,7 @@ export default function Navbar() {
                           item.current
                             ? "border-b border-primary text-primary hover:text-primary"
                             : "text-gray-300 navbar-a hover:text-primaryLight hover:-mt-1",
-                          "px-3 py-2 text-sm flex justify-center items-center font-bold"
+                          "px-3 py-2 text-sm flex justify-center items-center font-bold",
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -68,22 +63,14 @@ export default function Navbar() {
                   type="button"
                   className="text-primaryLight rounded-full w-8 h-8 p-[6px] flex justify-center items-center ring-primaryLight ring-1 hover:bg-primaryLight hover:text-white focus:bg-primary focus:text-white focus:outline-none"
                 >
-                  <FontAwesomeIcon
-                    icon={faBell}
-                    aria-hidden="true"
-                    className="w-full h-full"
-                  />
+                  <FontAwesomeIcon icon={faBell} aria-hidden="true" className="w-full h-full" />
                 </button>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="ml-3 relative">
                   <div>
                     <Menu.Button className="text-primaryLight rounded-full w-8 h-8 p-[6px] flex justify-center items-center ring-primaryLight ring-1 hover:bg-primaryLight hover:text-white focus:bg-primary focus:text-white focus:outline-none">
-                      <FontAwesomeIcon
-                        icon={faUser}
-                        aria-hidden="true"
-                        className="w-full h-full"
-                      />
+                      <FontAwesomeIcon icon={faUser} aria-hidden="true" className="w-full h-full" />
                     </Menu.Button>
                   </div>
                   <Transition
@@ -102,7 +89,7 @@ export default function Navbar() {
                             href="/#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "block px-4 py-2 text-sm text-gray-700",
                             )}
                           >
                             Your Profile
@@ -115,7 +102,7 @@ export default function Navbar() {
                             href="/#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "block px-4 py-2 text-sm text-gray-700",
                             )}
                           >
                             Settings
@@ -128,7 +115,7 @@ export default function Navbar() {
                             href="/#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "block px-4 py-2 text-sm text-gray-700",
                             )}
                           >
                             Sign out
@@ -154,7 +141,7 @@ export default function Navbar() {
                     item.current
                       ? "bg-primary text-white"
                       : "text-gray-300 hover:bg-primary hover:bg-opacity-70 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                    "block px-3 py-2 rounded-md text-base font-medium",
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
@@ -166,5 +153,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  );
+  )
 }

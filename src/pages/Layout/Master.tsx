@@ -1,5 +1,6 @@
-import React from "react";
-import Navbar from "../../components/Navbar";
+import React from "react"
+
+import Navbar from "../../components/Navbar"
 
 export default function Master(props: { children: any }) {
   return (
@@ -7,5 +8,5 @@ export default function Master(props: { children: any }) {
       <Navbar />
       <div className="w-full h-full">{props.children}</div>
     </div>
-  );
+  )
 }
